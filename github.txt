@@ -1,0 +1,59 @@
+AULA 02 ..........................................................................................................
+
+Commit: é possível fazer da web ou da máquina local
+    code > creat new fie > commit new file
+
+VSCode no github: é possível editar dentro do próprio vscode web no cloud   
+    Source control: à esquerda, no menu de ícones do editor, é possível realizar o commit direto pelo editor, sem
+        precisar passar pelo github
+
+Adicionando um colaborador: settings > collaborators : adicionar pelo nome 
+
+AULA 03 ..........................................................................................................
+
+O que é GIT?
+    GIT é um sistema de controle de versão de código-fonte, que permite que várias pessoas trabalhem juntas em um mesmo projeto, 
+    sem que uma alteração feita por uma pessoa afete o trabalho de outra pessoa. É como se fosse um sistema de backup que guarda 
+    as diferentes versões de um arquivo, permitindo que os usuários possam voltar a versões anteriores caso necessário, 
+    e também ajuda a manter um histórico de todas as alterações feitas no projeto ao longo do tempo. O GIT é amplamente utilizado 
+    por desenvolvedores de software para colaborar em projetos de código aberto e fechado.
+
+Git status, comiit e push:
+
+comandos principais na linha de comando: 
+    puxar coisas do repositório origem e atualizar na máquina local: git pull arquivo.git
+    mostrar asmodificações feitas no arquivo: git status
+    mandar coisas para o repositório github: 
+        via código: git commit arquivo -m "mensagem enviada junto dele" (faz o comiit no repositório local, precisa fazer o push para o origem)
+    enviar para o repositório no github: git push origin main
+    "mostrar o diff" = mostrar qual a modificação no commit
+    para vizualizar as modificações em uma linha: git log --oneline 
+    para voltar em um commmit passado usando a hash: git restore --source codigohash app.js(quais arquivos que eu queira que sofram o restore)
+    vizualizar todos os commits, um em cada linha de comando: git log
+    pesquisar infos do autor do commit: git log --author="user_name"
+    pesquisar informações por data: git log --since=1.month.ago
+    criar uma cópia local de um repositório existente: git clone
+    para adicionar todas as modificações feitas em um repositório de uma só vez: git add .
+    para adicionar todas as modificações feitas em um arquivo específico: git add nome-do-arquivo-alterado
+
+AULA 04 ..........................................................................................................
+
+Git add: git add . (todas as modificações serão adicionadas) => git commit vem depois
+
+Open source: Um projeto open source é um projeto de software cujo código-fonte é disponibilizado publicamente, 
+    que qualquer pessoa possa visualizar, modificar e distribuir o código-fonte. Esse modelo de desenvolvimento 
+    de software é baseado em colaboração, transparência e compartilhamento de conhecimento.
+
+AULA 05 ..........................................................................................................
+
+Branch: ramificações do projeto original. Por exemplo: cria-se um branchpara ser desenvolvido em paralelo e, caso
+    aprovado, pode ser adicionado ao main branch
+
+    para criar uma branch: git checkout -b nome-da-branch
+    para voltar ao main: git switch main
+    para enviar para o repositório: git push origin nome-da-branch
+
+Merge: enviar tudo o que está em uma branch e envia para o código main
+    para vizualizar todas as branchs: git branch
+    para merge: git merge "nome da branch que quer dar merge"
+    
